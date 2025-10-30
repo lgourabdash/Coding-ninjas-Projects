@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  justify-content: center;
+}
+
+.content-overlay {
+  padding-top: 100px;
+}
+
+.background-image {
+  background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #2e0854;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+header h1 {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
+
+.hero {
+  padding-bottom: 50px;
+}
+
+.overlay-text {
+  position: fixed;
+  top: 120px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.coach-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
+
+.img-overlay {
+  position: relative;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.coach-card {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background: #fff;
+}
+
+.coach-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coach-card p {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.star-players {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.players-scroll {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #2e0854 #f1f1f1;
+}
+
+.players-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.players-scroll::-webkit-scrollbar-thumb {
+  background-color: #2e0854;
+  border-radius: 4px;
+}
+.players-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.player-card:hover {
+  transform: translateY(-5px);
+}
+
+.player-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.player-card p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.player-card p span {
+  color: #e67e22;
+  font-weight: normal;
+}
+
+.ranking-table {
+  border-collapse: collapse;
+  width: 60%;
+  max-width: 700px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.ranking-table th {
+  background-color: #2e1652;
+  color: white;
+  text-align: left;
+  padding: 14px;
+}
+.ranking-table td {
+  background-color: white;
+  padding: 14px;
+  border-top: 1px solid #ddd;
+}
+.ranking-table tr:hover td {
+  background-color: #f7f3ff;
+}
+
+.site-footer {
+  background-color: #2e1652;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.site-footer .social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.3em;
+  transition: color 0.3s;
+}
+.site-footer .social-icons a:hover {
+  color: #e67e22;
+}
