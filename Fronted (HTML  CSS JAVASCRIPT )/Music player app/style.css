@@ -1,0 +1,79 @@
+:root {
+  --text-main: black;
+  --bg-main: rgb(233, 231, 231);
+  --shadow-main: -3px -3px 4px #634991, 3px 3px 4px #5ba7d4;
+  --theme-bg: #0b81bc;
+  --item-bg: #0573ab;
+  --btn-bg: #915bfe;
+}
+
+[data-mode="dark"] {
+  --text-main: #fff;
+  --bg-main: #555;
+  --shadow-main: -3px -3px 4px #444, 3px 3px 4px #000;
+  --item-bg: #64696d;
+  --btn-bg: #7341d6;
+}
+
+body {
+  background: var(--bg-main);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.app-header {
+  text-align: center;
+  padding: 10px;
+  color: var(--text-main);
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.song-panel,
+.playlistPanel {
+  width: 300px;
+  padding: 15px;
+  background: var(--theme-bg);
+  border-radius: 10px;
+  color: #fff;
+}
+
+#songList li,
+#playlistNames li,
+#playlistSongs li {
+  background: var(--item-bg);
+  margin: 8px 0;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.player-card {
+  background: var(--theme-bg);
+  flex: 1;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  box-shadow: var(--shadow-main);
+}
+
+#trackDisplay img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+}
+
+.player-card button {
+  background: var(--btn-bg);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 6px;
+  cursor: pointer;
+}
